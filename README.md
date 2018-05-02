@@ -1,4 +1,9 @@
 # conductor-client-for-php
+**Install**
+
+_composer require mobiletech/conductor_
+
+Require PHP 7.2 or later with ZTS
 
 **How to use**
 
