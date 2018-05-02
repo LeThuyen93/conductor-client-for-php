@@ -1,0 +1,34 @@
+{
+    "name": "mobiletech/conductor",
+    "description": "php client for netflix conductor",
+    "type": "library",
+    "keywords": [
+        "conductor"
+    ],
+    "require": {
+        "php" : ">=7.2"
+    },
+    "license": "2018",
+    "authors": [
+        {
+            "name": "thuyenlv",
+            "email": "thuyenlv@ai-t.vn"
+        }
+    ],
+    "autoload": {
+        "psr-4": {
+            "conductor\\common\\metadata\\events\\": "src/conductor/common/metadata/events",
+            "conductor\\common\\metadata\\tasks\\": "src/conductor/common/metadata/tasks",
+            "conductor\\common\\metadata\\workflows\\": "src/conductor/common/metadata/workflows",
+            "conductor\\common\\run\\": "src/conductor/common/run",
+            "conductor\\client\\http\\": "src/conductor/client/http",
+            "conductor\\client\\task\\": "src/conductor/client/task",
+            "conductor\\client\\worker\\": "src/conductor/client/worker"
+        }
+    },
+    "version": "1.0.0",
+    "minimum-stability": "dev",
+    "require-dev": {
+        "phpunit/phpunit": "^6.5"
+    }
+}

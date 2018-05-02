@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites>
+  <testsuite name="ClientBaseTest" file="/Users/thuyenlv/git_mobiletech/conductor-client-for-php/tests/ClientBaseTest.php" tests="3" assertions="3" errors="0" failures="0" skipped="0" time="0.274290">
+    <testcase name="testGetForEntity" class="ClientBaseTest" classname="ClientBaseTest" file="/Users/thuyenlv/git_mobiletech/conductor-client-for-php/tests/ClientBaseTest.php" line="32" assertions="1" time="0.222350"/>
+    <testcase name="testPostForEntity" class="ClientBaseTest" classname="ClientBaseTest" file="/Users/thuyenlv/git_mobiletech/conductor-client-for-php/tests/ClientBaseTest.php" line="45" assertions="1" time="0.031768"/>
+    <testcase name="testDelete" class="ClientBaseTest" classname="ClientBaseTest" file="/Users/thuyenlv/git_mobiletech/conductor-client-for-php/tests/ClientBaseTest.php" line="58" assertions="1" time="0.020172"/>
+  </testsuite>
+</testsuites>
