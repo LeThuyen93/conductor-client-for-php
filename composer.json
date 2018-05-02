@@ -8,7 +8,6 @@
     "require": {
         "php" : ">=7.2"
     },
-    "license": "2018",
     "authors": [
         {
             "name": "thuyenlv",
