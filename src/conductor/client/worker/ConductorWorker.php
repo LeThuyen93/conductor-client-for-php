@@ -47,7 +47,7 @@ abstract class ConductorWorker extends Threaded
                 $workerId = gethostname();
                 $tasks = $this->taskClient->poll($taskType, $workerId, null, $this->getPollCount(), 1000);
                 if (count($tasks)) {
-                    $pool = new Pool($this->threadCount);
+                    $pool = new Pool($this->threadCount, AutoLoader::class, [__DIR__ . "/../../../../../../../vendor/autoload.php"]);
                     foreach ($tasks as $task) {
                         $pool->submit(new ConductorWorkerExecute($this, $task));
                     }

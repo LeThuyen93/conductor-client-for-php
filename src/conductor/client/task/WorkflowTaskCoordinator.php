@@ -9,6 +9,7 @@
 namespace conductor\client\task;
 
 use conductor\client\http\TaskClient;
+use conductor\client\worker\AutoLoader;
 use conductor\client\worker\ConductorWorker;
 use Pool;
 
@@ -44,7 +45,7 @@ class WorkflowTaskCoordinator
 
     public function init()
     {
-        $pool = new Pool(count($this->workers));
+        $pool = new Pool(count($this->workers), AutoLoader::class, [__DIR__ . "/../../../../../../../vendor/autoload.php"]);
         foreach ($this->workers as $worker) {
             $worker->taskClient = $this->client;
             $worker->threadCount = $this->threadCount;
